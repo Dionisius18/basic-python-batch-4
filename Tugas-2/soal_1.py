@@ -9,13 +9,11 @@ daftar_kontak = []
 
 def print_daftar_kontak () :
     for kontak in daftar_kontak :
-        print(kontak["nama"])
-        print(kontak["nomor"])
+        print("nama : {}".format(kontak["nama"]))
+        print("nomor HP: {}".format(kontak["nomor"]))
 
 def tambah_daftar_kontak (nama, nomor) :
     kontak_baru = {"nama" : nama, "nomor": nomor}
-    nama = input('nama :')
-    nomor = input('nomor :')
     daftar_kontak.append(kontak_baru)
 
 daftar_menu()
@@ -27,8 +25,10 @@ while True :
         daftar_menu()
         pilihan = int(input("Pilih menu: "))
     elif pilihan == 2 :
-        tambah_daftar_kontak("nama", "nomor")
-        print("Kontak berhasil ditambahkan")
+        nama = input('nama :')
+        nomor = input('nomor :')
+        tambah_daftar_kontak(nama, nomor)
+        print("Kontak berhasil")
         daftar_menu()
         pilihan = int(input("Pilih menu: "))
     elif pilihan == 3 :
