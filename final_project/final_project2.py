@@ -1,3 +1,5 @@
+#https://code.tutsplus.com/id/tutorials/sending-emails-in-python-with-smtp--cms-29975
+
 import smtplib
 import config
 
@@ -20,4 +22,4 @@ msg = "Hallo"
 
 send_email(subject, msg)
 
-https://www.youtube.com/watch?v=mP_Ln-Z9-XY
+#https://www.youtube.com/watch?v=mP_Ln-Z9-XY

@@ -9,5 +9,5 @@ for line in r_file:
 r_file.close()
 
 EMAIL_ADDRESS = "dnisius64@gmail.com"
-PASSWORD ="Nisius12."
+PASSWORD =input(str("Masukan password anda: "))
 EMAIL_REC = list_email
