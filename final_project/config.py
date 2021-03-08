@@ -1,5 +1,6 @@
 #https://www.kite.com/python/answers/how-to-convert-each-line-in-a-text-file-into-a-list-in-python
 
+
 r_file = open("email.txt", "r")
 list_email = []
 for line in r_file:
@@ -9,5 +10,5 @@ for line in r_file:
 r_file.close()
 
 EMAIL_ADDRESS = "dnisius64@gmail.com"
-PASSWORD =input(str("Masukan password anda: "))
+PASSWORD = "Nisius12."
 EMAIL_REC = list_email
